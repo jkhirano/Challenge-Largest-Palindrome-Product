@@ -52,6 +52,8 @@ module.exports = function(digits) {
     }
   }
 
+  // ^ Note: digits = num of digits (ex: 2 or 3)
+
   return {
     factor_0: factor_0,
     factor_1: factor_1,
