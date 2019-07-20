@@ -12,21 +12,6 @@ module.exports = function(digits) {
 
   // do your work here
 
-  // 1. check if number is palendrome:
-  // create var = num
-  // create function to reverse digits of num, then compare reverse version of num with num
-  // if same, return true, if not, return false
-
-  // let n = num;
-  // let rev = 0;
-
-  // while (num > 0) {
-  //   let r = n % 10;
-  //   rev = rev * 10 + r;
-  //   n = n / 10;
-  // }
-  // return num == rev;
-
   function checkPalindrome(num) {
     let numToString = num.toString();
     const reverse = numToString
@@ -36,9 +21,6 @@ module.exports = function(digits) {
 
     return numToString === reverse;
   }
-
-  console.log(checkPalindrome(12321));
-  console.log(checkPalindrome(12341));
 
   for (let i = 10 ** (digits - 1); i < 10 ** digits; i++) {
     for (let j = 10 ** (digits - 1); j < 10 ** digits; j++) {
@@ -51,8 +33,6 @@ module.exports = function(digits) {
       }
     }
   }
-
-  // ^ Note: digits = num of digits (ex: 2 or 3)
 
   return {
     factor_0: factor_0,
